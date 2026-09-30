@@ -1,0 +1,47 @@
+Set,Attribute,Description,Variable name
+Dependent,churn event,No transaction in future period.,target_event
+Dependent,retention campaign profit,Incremental profit in future period.,target_actual_profit
+Recency,session recency,time duration from the last session [days],session_recency
+Recency,purchase recency,time duration from the last transaction [days],purchase_recency
+Recency,time to session,time between sessions [days],inter_session_time
+Recency,time to purchase,time between purchases [days],inter_purchase_time
+Frequency,session number,user-session number [n],session_number
+Frequency,purchase number,user-purchase number [n],purchase_number
+Frequency,session daily frequency *,session count per day,session_count_ratio
+Frequency,interaction daily frequency *,interaction count per day,click_count_ratio
+Frequency,transaction daily frequency *,transaction count per day,transaction_count_ratio
+Frequency,interaction frequency,user–application interaction (view/add-to?cart/purchase) count [n],click_count
+Frequency,view frequency,product views count [n],view_count
+Frequency,add-to-cart frequency,products added to a carts count [n],cart_count
+Frequency,purchase frequency,product purchased count [n],purchase_count
+Frequency,"total session frequency, with lags *","monthly total session count, with lags [n]",session_count_month_lag
+Frequency,ma of total session frequency *,moving average of monthly total session count,session_count_month_ma
+Frequency,"total purchase frequency, with lags *","monthly total purchase count, with lags [n]",purchase_count_month_lag
+Frequency,ma of total purchase frequency *,moving average of monthly total purchase count,purchase_count_month_ma
+Frequency,has-purchase indicator,"indicator, whether the session includes purchase",haspurchase
+Monetary,viewed revenue,potential revenue from viewed products [CU],view_revenue
+Monetary,added-to-cart revenue,potential revenue from products added to cart [CU],cart_revenue
+Monetary,transactional revenue,revenue from realized purchases [CU],purchase_revenue
+Monetary,"transactional revenue, with lags *","monthly transactional revenue, with lags [CU]",purchase_revenue_month_lag
+Monetary,ma of transactional revenue *,moving average of monthly transactional revenue [CU],purchase_revenue_month_ma
+Monetary,"customer value, with lags *","monthly customer value, with lags [CU]",customer_value_month_lag
+Monetary,ma of customer value *,moving average of monthly total customer value [CU],customer_value_month_ma
+Preference,view latent factor *,latent factor characterizing preference manifested through product views,view_latent_factor
+Preference,purchase latent factor *,latent factor characterizing preference manifested through transactions,purchase_latent_factor
+Date & time,year,year of a session start,start_year
+Date & time,month,month of a session start,start_month
+Date & time,week,week of a year of a session start,start_week
+Date & time,day of year,day of a year of a session start,start_yearday
+Date & time,day of month,day of a month of a session start,start_monthday
+Date & time,day of week,day of a week of a session start,start_weekday
+Date & time,weekend indicator,"indicator, whether the session began during a weekend",start_isweekend
+Date & time,hour,hour of a session start,start_hour
+Others,time to interaction,average duration between interactions [min],time_to_click
+Others,time to view,average duration between product views [min],time_to_view
+Others,time to add-to-cart,average duration between adding products to cart [min],time_to_cart
+Others,time to purchase,average duration between purchases [min],time_to_purchase
+Others,time to interaction revenue,average duration to interact with a product of value 1 CU [min/CU],time_to_click_revenue
+Others,time to view revenue,average duration to view a product of value 1 CU [min/CU],time_to_view_revenue
+Others,time to add-to-cart revenue,average duration to add a product of value 1 CU to a cart [min/CU],time_to_cart_revenue
+Others,time to revenue,average duration to a purchase of value 1 CU [min/CU],time_to_purchase_revenue
+Others,session length,session duration [min],length
