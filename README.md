@@ -1,5 +1,4 @@
-# thesis-churn-prediction
-Διπλωματική εργασία – Customer Churn Prediction
+
 
 # Customer Churn Prediction – Διπλωματική εργασία
 
